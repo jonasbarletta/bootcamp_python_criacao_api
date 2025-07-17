@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, DateTime, Float
 from sqlalchemy.sql import func
-from database import Base
+from src.database import Base
 
 # Define o modelo ORM chamado 'Item'
 # Este modelo será convertido em uma tabela chamada 'items' no banco de dados
