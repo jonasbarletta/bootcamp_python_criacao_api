@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.orm import Session
-import models
-import database
+from src import models
+from src import database
 from typing import List, Union
 from schema import Item, ItemBase, ItemCreate
 

@@ -18,4 +18,4 @@ RUN poetry install --no-root
 EXPOSE 8501
 
 # Entrypoint é o que queremos escrever no terminal
-ENTRYPOINT [ "poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8501"]
+ENTRYPOINT ["poetry", "run", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8501"]
